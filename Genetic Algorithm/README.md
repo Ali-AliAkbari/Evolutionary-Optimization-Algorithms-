@@ -42,13 +42,6 @@ Install dependencies using:
 pip install numpy matplotlib
 ```
 
-## How to Run
-
-Run the script to start optimizing the TSP solution:
-
-```python
-python genetic_algorithm_tsp.py
-```
 
 ### Key Parameters
 
@@ -77,6 +70,7 @@ It also generates an **animated visualization** (`tsp_animation.gif`) showing ho
 <p align="center">
   <img src="Image/tsp_animation.gif"  width="450"/>
 </p>
+
 ## Example Output
 
 ```
