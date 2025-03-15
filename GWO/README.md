@@ -1,4 +1,4 @@
-# Grey Wolf Optimizer (GWO) Visualization
+# Grey Wolf Optimizer (GWO) 
 
 This repository contains an implementation of the **Grey Wolf Optimizer (GWO)**, a nature-inspired optimization algorithm that mimics the leadership hierarchy and hunting mechanism of grey wolves. The algorithm is used to find the optimal solution to a given function.
 
