@@ -60,17 +60,9 @@ Evolutionary algorithms (EAs) are a subset of **metaheuristic optimization metho
 
 ---
 
-## Future Algorithms
+## Table of Evolutionary Optimization Algorithms
 
-I plan to explore and implement the following evolutionary optimization algorithms in the future:
-
-| Algorithm               | Key Feature                                                                 | Status       |
-|-------------------------|-----------------------------------------------------------------------------|--------------|
-| Simulated Annealing      | Inspired by the annealing process in metallurgy; uses temperature to control exploration. | Planned      |
-| Ant Colony Optimization  | Inspired by ants foraging behavior; uses pheromones to find shortest paths. | Planned      |
-| Differential Evolution   | Uses vector differences to mutate and recombine solutions.                  | Planned      |
-| Artificial Bee Colony    | Mimics the foraging behavior of honey bees.                                 | Planned      |
-
----
+1. [Genetic Algorithm](Genetic Algorithm)
+2. [PSO Algorithm](#where-do-evolutionary-algorithms-fit-in)
 
 
