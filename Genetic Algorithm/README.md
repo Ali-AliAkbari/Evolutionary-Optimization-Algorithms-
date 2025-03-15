@@ -69,6 +69,7 @@ It also generates an **animated visualization** (`tsp_animation.gif`) showing ho
 
 <p align="center">
   <img src="Image/tsp_animation.gif"  width="450"/>
+  <img src="Image/tsp_animation1.gif"  width="450"/>
 </p>
 
 ## Example Output
