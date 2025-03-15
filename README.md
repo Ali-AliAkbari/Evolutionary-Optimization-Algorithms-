@@ -62,7 +62,7 @@ Evolutionary algorithms (EAs) are a subset of **metaheuristic optimization metho
 
 ## Table of Evolutionary Optimization Algorithms
 
-1. 1. [Genetic Algorithm](Genetic%20Algorithm/)
-2. [PSO Algorithm](#where-do-evolutionary-algorithms-fit-in)
+1. [Genetic Algorithm](Genetic%20Algorithm/)
+2. [PSO Algorithm](PSO/)
 
 
