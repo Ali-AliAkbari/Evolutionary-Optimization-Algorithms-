@@ -17,7 +17,6 @@ The function to be optimized is designed with various mathematical components:
 - A boundary effect to constrain the function’s domain
 
 ```python
-# Function definition
 
 def f(x, y):
     base = 500 * (np.sin(0.03*x) + np.cos(0.04*y))
