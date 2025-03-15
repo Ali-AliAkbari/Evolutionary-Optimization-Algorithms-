@@ -74,6 +74,9 @@ Best score: Z
 
 It also generates an **animated visualization** (`tsp_animation.gif`) showing how the route improves over generations.
 
+<p align="center">
+  <img src="Image/tsp_animation.gif"  width="450"/>
+</p>
 ## Example Output
 
 ```
