@@ -31,6 +31,9 @@ def f(x, y):
     
     return base + global_max + local_max1 + local_min1 + local_max2 + noise + boundary
 ```
+<p align="center">
+  <img src="Images/output.png"  width="450"/>
+</p>
 
 ## Particle Swarm Optimization (PSO)
 
@@ -76,6 +79,10 @@ gif_path = "particle_swarm_optimization.gif"
 frames[0].save(gif_path, save_all=True, append_images=frames[1:], duration=100, loop=0)
 print(f"GIF saved at: {gif_path}")
 ```
+
+<p align="center">
+  <img src="Images/particle_swarm_optimization.gif"  width="450"/>
+</p>
 
 ## How to Run
 
