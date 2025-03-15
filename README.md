@@ -73,8 +73,4 @@ I plan to explore and implement the following evolutionary optimization algorith
 
 ---
 
-## How to Use This Repository
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
