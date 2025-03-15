@@ -16,6 +16,34 @@ To run the code, ensure you have the following dependencies installed:
 pip install numpy matplotlib pillow
 ```
 
+## Function Definition
+
+The function to be optimized is designed with various mathematical components:
+
+- A sinusoidal base function
+- A well-defined global maximum near (-20,30)
+- Several local maxima and minima
+- Random noise to introduce complexity
+- A boundary effect to constrain the function’s domain
+
+```python
+
+def f(x, y):
+    base = 500 * (np.sin(0.03*x) + np.cos(0.04*y))
+    dist_global = np.sqrt((x+20)**2 + (y-30)**2)
+    global_max = 2000 * np.where(dist_global < 1.5, 1, np.exp(-dist_global**2/200))  
+    local_max1 = 300 * np.exp(-((x-50)**2 + (y-10)**2)/150)
+    local_min1 = -200 * np.exp(-((x+60)**2 + (y+70)**2)/100)
+    local_max2 = 250 * np.exp(-((x-10)**2 + (y+80)**2)/120)
+    noise = 80 * (np.sin(0.1*x + np.cos(0.15*y)) + np.cos(0.12*y + np.sin(0.08*x)))
+    boundary = -0.003 * (x**2 + y**2)
+    
+    return base + global_max + local_max1 + local_min1 + local_max2 + noise + boundary
+```
+<p align="center">
+  <img src="Image/output.png"  width="450"/>
+</p>
+
 ## How the Grey Wolf Optimizer Works
 
 The Grey Wolf Optimizer (GWO) was introduced by Seyedali Mirjalili, et al., in the paper **"Grey Wolf Optimizer"** (2014). The algorithm is inspired by the social hierarchy and hunting behavior of grey wolves in nature.
@@ -82,9 +110,15 @@ A lower `a` value results in smaller steps, allowing wolves to focus on local se
 
 When `|A| > 1`, wolves move further to explore new regions. When `|A| < 1`, they converge toward the best solution.
 
-## Function to Optimize
 
-The code optimizes a function `f(x, y)`. You can modify the function as needed in the script.
+## Example Visualization
+
+Below is an example of the Grey Wolf Optimizer in action, showing the movement of wolves over iterations:
+
+<p align="center">
+  <img src="Image/wolves_movement.gif"  width="450"/>
+</p>
+This GIF represents the optimization process as the wolves move towards the best solution.
 
 ## Contributions
 
