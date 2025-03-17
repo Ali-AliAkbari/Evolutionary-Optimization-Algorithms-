@@ -1,16 +1,17 @@
----
-
 # **Whale Optimization Algorithm (WOA) - Benchmark Functions**
 
 ## **1️⃣ Overview of WOA**
-The **Whale Optimization Algorithm (WOA)** is a **nature-inspired metaheuristic optimization algorithm** proposed by **Seyedali Mirjalili** in 2016. It is based on the **hunting behavior of humpback whales**, particularly their **bubble-net feeding method**.  
 
-Humpback whales hunt by creating a spiral movement around their prey, trapping it inside a shrinking circle before attacking. WOA mathematically simulates this behavior to solve **optimization problems** by iteratively refining solutions in a search space.
+The **Whale Optimization Algorithm (WOA)** is a **nature-inspired metaheuristic optimization algorithm** introduced by **Seyedali Mirjalili** in 2016. It is inspired by the **hunting behavior of humpback whales**, specifically their **bubble-net feeding strategy**. 
+
+Humpback whales hunt by creating a spiral movement around their prey, trapping it within a shrinking circle before attacking. WOA mathematically models this behavior to solve **optimization problems** by iteratively refining solutions within a search space.
 
 ## **2️⃣ How WOA Works**
-The WOA mimics the whale's hunting strategy using three main operations:
+
+The WOA simulates the whale's hunting strategy through three primary operations:
 
 ### **A. Encircling Prey (Exploitation)**
+
 Whales identify the best candidate solution (prey) and update their positions relative to it:
 
 \[
@@ -27,6 +28,7 @@ Where:
 - \( \vec{A} \) and \( \vec{C} \) are coefficient vectors controlling convergence.  
 
 ### **B. Spiral Update (Exploitation)**
+
 If the probability \( p \geq 0.5 \), the whale follows a **spiral path** instead of direct encircling:
 
 \[
@@ -38,6 +40,7 @@ Where:
 - \( l \) is a random number in **[-1,1]**.  
 
 ### **C. Search for Prey (Exploration)**
+
 To maintain diversity and avoid local optima, whales **randomly explore the search space**:
 
 \[
@@ -51,6 +54,7 @@ To maintain diversity and avoid local optima, whales **randomly explore the sear
 Where \( \vec{X}_{rand} \) is a **random whale**.
 
 ### **D. Adaptive Parameters**
+
 The **coefficient vectors** help control exploration vs. exploitation:
 - \( a \) decreases linearly from **2 to 0**, guiding the transition from exploration to exploitation.  
 - \( A \) and \( C \) depend on random values for stochastic behavior.  
@@ -58,7 +62,8 @@ The **coefficient vectors** help control exploration vs. exploitation:
 ---
 
 ## **3️⃣ Benchmark Functions Used**
-To test WOA, we apply it to **five well-known optimization functions**:
+
+To evaluate WOA, we apply it to **five well-known optimization functions**:
 
 | **Function**  | **Formula** | **Global Minimum** |
 |--------------|------------|------------------|
@@ -73,6 +78,7 @@ These functions **test WOA's ability to find minima** across different landscape
 ---
 
 ## **4️⃣ GIF Visualizations**
+
 The optimization process for each function is animated in GIFs, showing the whales' movement towards the global optimum.
 
 | **Function** | **GIF Visualization** |
@@ -86,6 +92,7 @@ The optimization process for each function is animated in GIFs, showing the whal
 ---
 
 ## **5️⃣ Optimization Results**
+
 Below is a table showing the **best solution found** for each function:
 
 | **Function**  | **Best (x, y) Found** | **WOA Cost** | **Optimal Cost** |
@@ -101,7 +108,19 @@ WOA successfully converges to near-optimal solutions for all benchmark functions
 ---
 
 ## **6️⃣ Reference**
+
 - Mirjalili, S. (2016). **"The Whale Optimization Algorithm"**. *Advances in Engineering Software, 95, 51-67*. [DOI: 10.1016/j.advengsoft.2016.01.008](https://doi.org/10.1016/j.advengsoft.2016.01.008)
 
 ---
 
+### **Note on GitHub Rendering**
+
+To ensure equations render correctly on GitHub, use the following format:
+
+```markdown
+\[
+\vec{D} = |\vec{C} \cdot \vec{X^*} - \vec{X}|
+\]
+```
+
+This will ensure proper rendering of mathematical equations in your README file.
