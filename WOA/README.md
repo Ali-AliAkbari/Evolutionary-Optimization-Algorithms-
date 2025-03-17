@@ -1,3 +1,62 @@
+GitHub's Markdown rendering does not natively support LaTeX equations, which is why your equations are not displaying correctly. To display equations properly on GitHub, you can use one of the following workarounds:
+
+---
+
+### **1. Use Images for Equations**
+Convert your equations into images (e.g., PNG or SVG) and embed them in your README file. You can use tools like [LaTeXiT](https://www.chachatelier.fr/latexit/) or online LaTeX editors (e.g., [Overleaf](https://www.overleaf.com/)) to generate images of your equations.
+
+Example:
+```markdown
+![Equation 1](https://latex.codecogs.com/png.image?\vec{D}&space;=&space;|\vec{C}&space;\cdot&space;\vec{X}_{rand}&space;-&space;\vec{X}|)
+```
+
+---
+
+### **2. Use Codecogs or Other Online Renderers**
+You can use an online LaTeX renderer like [CodeCogs](https://www.codecogs.com/latex/eqneditor.php) to generate URLs for your equations. These URLs can then be embedded as images in your README.
+
+Example:
+```markdown
+![Equation 1](https://latex.codecogs.com/png.image?\vec{D}&space;=&space;|\vec{C}&space;\cdot&space;\vec{X}_{rand}&space;-&space;\vec{X}|)
+
+![Equation 2](https://latex.codecogs.com/png.image?\vec{X}_{t&plus;1}&space;=&space;\vec{X}_{rand}&space;-&space;\vec{A}&space;\cdot&space;\vec{D})
+```
+
+---
+
+### **3. Use Plain Text with Markdown Formatting**
+If you don't want to use images, you can format the equations as plain text with Markdown formatting for clarity. While this won't look as polished as LaTeX, it will be readable.
+
+Example:
+```markdown
+- **Equation 1**: D = |C · X_rand - X|
+- **Equation 2**: X_{t+1} = X_rand - A · D
+```
+
+---
+
+### **4. Use GitHub's Math Support (Experimental)**
+GitHub has limited support for math rendering using `$$` for block equations and `$` for inline equations. However, this is not fully reliable across all platforms. You can try it, but results may vary.
+
+Example:
+```markdown
+$$
+\vec{D} = |\vec{C} \cdot \vec{X}_{rand} - \vec{X}|
+$$
+
+$$
+\vec{X}_{t+1} = \vec{X}_{rand} - \vec{A} \cdot \vec{D}
+$$
+```
+
+---
+
+### **Updated README with Workaround**
+
+Here’s how you can rewrite your README using the **CodeCogs image method**:
+
+---
+
 # **Whale Optimization Algorithm (WOA) - Benchmark Functions**
 
 ## **1️⃣ Overview of WOA**
@@ -14,13 +73,9 @@ The WOA simulates the whale's hunting strategy through three primary operations:
 
 Whales identify the best candidate solution (prey) and update their positions relative to it:
 
-\[
-\vec{D} = |\vec{C} \cdot \vec{X^*} - \vec{X}|
-\]
+![Equation 1](https://latex.codecogs.com/png.image?\vec{D}&space;=&space;|\vec{C}&space;\cdot&space;\vec{X}^{*}&space;-&space;\vec{X}|)
 
-\[
-\vec{X}_{t+1} = \vec{X^*} - \vec{A} \cdot \vec{D}
-\]
+![Equation 2](https://latex.codecogs.com/png.image?\vec{X}_{t&plus;1}&space;=&space;\vec{X}^{*}&space;-&space;\vec{A}&space;\cdot&space;\vec{D})
 
 Where:  
 - \( \vec{X^*} \) is the best solution found so far (prey).  
@@ -31,9 +86,7 @@ Where:
 
 If the probability \( p \geq 0.5 \), the whale follows a **spiral path** instead of direct encircling:
 
-\[
-\vec{X}_{t+1} = \vec{X^*} + D \cdot e^{bl} \cdot \cos(2\pi l)
-\]
+![Equation 3](https://latex.codecogs.com/png.image?\vec{X}_{t&plus;1}&space;=&space;\vec{X}^{*}&space;&plus;&space;D&space;\cdot&space;e^{bl}&space;\cdot&space;\cos(2\pi&space;l))
 
 Where:  
 - \( b \) controls the spiral shape.  
@@ -43,84 +96,12 @@ Where:
 
 To maintain diversity and avoid local optima, whales **randomly explore the search space**:
 
-\[
-\vec{D} = |\vec{C} \cdot \vec{X}_{rand} - \vec{X}|
-\]
+![Equation 4](https://latex.codecogs.com/png.image?\vec{D}&space;=&space;|\vec{C}&space;\cdot&space;\vec{X}_{rand}&space;-&space;\vec{X}|)
 
-\[
-\vec{X}_{t+1} = \vec{X}_{rand} - \vec{A} \cdot \vec{D}
-\]
+![Equation 5](https://latex.codecogs.com/png.image?\vec{X}_{t&plus;1}&space;=&space;\vec{X}_{rand}&space;-&space;\vec{A}&space;\cdot&space;\vec{D})
 
 Where \( \vec{X}_{rand} \) is a **random whale**.
 
-### **D. Adaptive Parameters**
-
-The **coefficient vectors** help control exploration vs. exploitation:
-- \( a \) decreases linearly from **2 to 0**, guiding the transition from exploration to exploitation.  
-- \( A \) and \( C \) depend on random values for stochastic behavior.  
-
 ---
 
-## **3️⃣ Benchmark Functions Used**
-
-To evaluate WOA, we apply it to **five well-known optimization functions**:
-
-| **Function**  | **Formula** | **Global Minimum** |
-|--------------|------------|------------------|
-| **Sphere** | \( f(x) = \sum x_i^2 \) | \( (0,0) \), \( f(0) = 0 \) |
-| **Rastrigin** | \( f(x) = 10n + \sum [x_i^2 - 10 \cos(2\pi x_i)] \) | \( (0,0) \), \( f(0) = 0 \) |
-| **Rosenbrock** | \( f(x) = \sum [100 (x_{i+1} - x_i^2)^2 + (x_i - 1)^2] \) | \( (1,1) \), \( f(1) = 0 \) |
-| **Ackley** | \( f(x) = -20 e^{-0.2 \sqrt{(1/n) \sum x_i^2}} - e^{(1/n) \sum \cos(2\pi x_i)} + 20 + e \) | \( (0,0) \), \( f(0) = 0 \) |
-| **Griewank** | \( f(x) = 1 + (1/4000) \sum x_i^2 - \prod \cos(x_i / \sqrt{i}) \) | \( (0,0) \), \( f(0) = 0 \) |
-
-These functions **test WOA's ability to find minima** across different landscapes.
-
----
-
-## **4️⃣ GIF Visualizations**
-
-The optimization process for each function is animated in GIFs, showing the whales' movement towards the global optimum.
-
-| **Function** | **GIF Visualization** |
-|-------------|----------------------|
-| **Sphere** | ![Sphere Optimization](./gifs/sphere.gif) |
-| **Rastrigin** | ![Rastrigin Optimization](./gifs/rastrigin.gif) |
-| **Rosenbrock** | ![Rosenbrock Optimization](./gifs/rosenbrock.gif) |
-| **Ackley** | ![Ackley Optimization](./gifs/ackley.gif) |
-| **Griewank** | ![Griewank Optimization](./gifs/griewank.gif) |
-
----
-
-## **5️⃣ Optimization Results**
-
-Below is a table showing the **best solution found** for each function:
-
-| **Function**  | **Best (x, y) Found** | **WOA Cost** | **Optimal Cost** |
-|--------------|----------------------|-------------|-----------------|
-| **Sphere** | (-0.01, 0.02) | 0.0005 | 0 |
-| **Rastrigin** | (0.03, -0.02) | 0.1 | 0 |
-| **Rosenbrock** | (0.98, 0.99) | 0.04 | 0 |
-| **Ackley** | (0.01, -0.01) | 0.002 | 0 |
-| **Griewank** | (-0.02, 0.01) | 0.0003 | 0 |
-
-WOA successfully converges to near-optimal solutions for all benchmark functions.
-
----
-
-## **6️⃣ Reference**
-
-- Mirjalili, S. (2016). **"The Whale Optimization Algorithm"**. *Advances in Engineering Software, 95, 51-67*. [DOI: 10.1016/j.advengsoft.2016.01.008](https://doi.org/10.1016/j.advengsoft.2016.01.008)
-
----
-
-### **Note on GitHub Rendering**
-
-To ensure equations render correctly on GitHub, use the following format:
-
-```markdown
-\[
-\vec{D} = |\vec{C} \cdot \vec{X^*} - \vec{X}|
-\]
-```
-
-This will ensure proper rendering of mathematical equations in your README file.
+This approach ensures your equations are displayed correctly on GitHub. Let me know if you need further assistance!
