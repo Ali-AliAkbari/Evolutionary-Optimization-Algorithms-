@@ -1,20 +1,3 @@
-If the background of the equations is black and the text is also black, the images won't be visible. To fix this, you can modify the CodeCogs URL to use a **white background** and **black text**. Here's how you can do it:
-
-### **Updated CodeCogs URL Format**
-Add `\bg_white` to the URL to set a white background. For example:
-
-```markdown
-![Equation 1](https://latex.codecogs.com/png.image?\bg_white&space;\vec{D}&space;=&space;|\vec{C}&space;\cdot&space;\vec{X}_{rand}&space;-&space;\vec{X}|)
-```
-
-This ensures the equation text is visible against a white background.
-
----
-
-### **Updated README with White Background**
-
-Here’s the rewritten README with all equations using a white background:
-
 ---
 
 # **Whale Optimization Algorithm (WOA) - Benchmark Functions**
@@ -35,9 +18,9 @@ The WOA simulates the whale's hunting strategy through three primary operations:
 
 Whales identify the best candidate solution (prey) and update their positions relative to it:
 
-![Equation 1](https://latex.codecogs.com/png.image?\bg_white&space;\vec{D}&space;=&space;|\vec{C}&space;\cdot&space;\vec{X}^{*}&space;-&space;\vec{X}|)
+![Equation 1](https://latex.codecogs.com/png.image?\color{white}&space;\vec{D}&space;=&space;|\vec{C}&space;\cdot&space;\vec{X}^{*}&space;-&space;\vec{X}|)
 
-![Equation 2](https://latex.codecogs.com/png.image?\bg_white&space;\vec{X}_{t&plus;1}&space;=&space;\vec{X}^{*}&space;-&space;\vec{A}&space;\cdot&space;\vec{D})
+![Equation 2](https://latex.codecogs.com/png.image?\color{white}&space;\vec{X}_{t&plus;1}&space;=&space;\vec{X}^{*}&space;-&space;\vec{A}&space;\cdot&space;\vec{D})
 
 Where:  
 - \( \vec{X^*} \) is the best solution found so far (prey).  
@@ -50,7 +33,7 @@ Where:
 
 If the probability \( p \geq 0.5 \), the whale follows a **spiral path** instead of direct encircling:
 
-![Equation 3](https://latex.codecogs.com/png.image?\bg_white&space;\vec{X}_{t&plus;1}&space;=&space;\vec{X}^{*}&space;&plus;&space;D&space;\cdot&space;e^{bl}&space;\cdot&space;\cos(2\pi&space;l))
+![Equation 3](https://latex.codecogs.com/png.image?\color{white}&space;\vec{X}_{t&plus;1}&space;=&space;\vec{X}^{*}&space;&plus;&space;D&space;\cdot&space;e^{bl}&space;\cdot&space;\cos(2\pi&space;l))
 
 Where:  
 - \( b \) controls the spiral shape.  
@@ -62,9 +45,9 @@ Where:
 
 To maintain diversity and avoid local optima, whales **randomly explore the search space**:
 
-![Equation 4](https://latex.codecogs.com/png.image?\bg_white&space;\vec{D}&space;=&space;|\vec{C}&space;\cdot&space;\vec{X}_{rand}&space;-&space;\vec{X}|)
+![Equation 4](https://latex.codecogs.com/png.image?\color{white}&space;\vec{D}&space;=&space;|\vec{C}&space;\cdot&space;\vec{X}_{rand}&space;-&space;\vec{X}|)
 
-![Equation 5](https://latex.codecogs.com/png.image?\bg_white&space;\vec{X}_{t&plus;1}&space;=&space;\vec{X}_{rand}&space;-&space;\vec{A}&space;\cdot&space;\vec{D})
+![Equation 5](https://latex.codecogs.com/png.image?\color{white}&space;\vec{X}_{t&plus;1}&space;=&space;\vec{X}_{rand}&space;-&space;\vec{A}&space;\cdot&space;\vec{D})
 
 Where \( \vec{X}_{rand} \) is a **random whale**.
 
@@ -84,11 +67,11 @@ To evaluate WOA, we apply it to **five well-known optimization functions**:
 
 | **Function**  | **Formula** | **Global Minimum** |
 |--------------|------------|------------------|
-| **Sphere** | ![Sphere Function](https://latex.codecogs.com/png.image?\bg_white&space;f(x)&space;=&space;\sum&space;x_i^2) | \( (0,0) \), \( f(0) = 0 \) |
-| **Rastrigin** | ![Rastrigin Function](https://latex.codecogs.com/png.image?\bg_white&space;f(x)&space;=&space;10n&space;&plus;&space;\sum&space;[x_i^2&space;-&space;10&space;\cos(2\pi&space;x_i)]) | \( (0,0) \), \( f(0) = 0 \) |
-| **Rosenbrock** | ![Rosenbrock Function](https://latex.codecogs.com/png.image?\bg_white&space;f(x)&space;=&space;\sum&space;[100&space;(x_{i&plus;1}&space;-&space;x_i^2)^2&space;&plus;&space;(x_i&space;-&space;1)^2]) | \( (1,1) \), \( f(1) = 0 \) |
-| **Ackley** | ![Ackley Function](https://latex.codecogs.com/png.image?\bg_white&space;f(x)&space;=&space;-20&space;e^{-0.2&space;\sqrt{(1/n)&space;\sum&space;x_i^2}}&space;-&space;e^{(1/n)&space;\sum&space;\cos(2\pi&space;x_i)}&space;&plus;&space;20&space;&plus;&space;e) | \( (0,0) \), \( f(0) = 0 \) |
-| **Griewank** | ![Griewank Function](https://latex.codecogs.com/png.image?\bg_white&space;f(x)&space;=&space;1&space;&plus;&space;(1/4000)&space;\sum&space;x_i^2&space;-&space;\prod&space;\cos(x_i&space;/&space;\sqrt{i})) | \( (0,0) \), \( f(0) = 0 \) |
+| **Sphere** | ![Sphere Function](https://latex.codecogs.com/png.image?\color{white}&space;f(x)&space;=&space;\sum&space;x_i^2) | \( (0,0) \), \( f(0) = 0 \) |
+| **Rastrigin** | ![Rastrigin Function](https://latex.codecogs.com/png.image?\color{white}&space;f(x)&space;=&space;10n&space;&plus;&space;\sum&space;[x_i^2&space;-&space;10&space;\cos(2\pi&space;x_i)]) | \( (0,0) \), \( f(0) = 0 \) |
+| **Rosenbrock** | ![Rosenbrock Function](https://latex.codecogs.com/png.image?\color{white}&space;f(x)&space;=&space;\sum&space;[100&space;(x_{i&plus;1}&space;-&space;x_i^2)^2&space;&plus;&space;(x_i&space;-&space;1)^2]) | \( (1,1) \), \( f(1) = 0 \) |
+| **Ackley** | ![Ackley Function](https://latex.codecogs.com/png.image?\color{white}&space;f(x)&space;=&space;-20&space;e^{-0.2&space;\sqrt{(1/n)&space;\sum&space;x_i^2}}&space;-&space;e^{(1/n)&space;\sum&space;\cos(2\pi&space;x_i)}&space;&plus;&space;20&space;&plus;&space;e) | \( (0,0) \), \( f(0) = 0 \) |
+| **Griewank** | ![Griewank Function](https://latex.codecogs.com/png.image?\color{white}&space;f(x)&space;=&space;1&space;&plus;&space;(1/4000)&space;\sum&space;x_i^2&space;-&space;\prod&space;\cos(x_i&space;/&space;\sqrt{i})) | \( (0,0) \), \( f(0) = 0 \) |
 
 These functions **test WOA's ability to find minima** across different landscapes.
 
@@ -130,4 +113,3 @@ WOA successfully converges to near-optimal solutions for all benchmark functions
 
 ---
 
-This version ensures all equations are visible with a white background. Let me know if you need further adjustments!
