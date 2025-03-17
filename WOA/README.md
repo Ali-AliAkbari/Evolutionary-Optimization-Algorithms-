@@ -158,4 +158,10 @@ WOA successfully converges to near-optimal solutions for all benchmark functions
 - Mirjalili, S. (2016). **"The Whale Optimization Algorithm"**. *Advances in Engineering Software, 95, 51-67*. [DOI: 10.1016/j.advengsoft.2016.01.008](https://doi.org/10.1016/j.advengsoft.2016.01.008)
 
 ---
+## 📜 License  
 
+This project is licensed under the **MIT License**, allowing free use, modification, and distribution.  
+
+## 🤝 Get in Touch  
+
+Feel free to reach out if you have any questions or are interested in collaboration! 🚀
