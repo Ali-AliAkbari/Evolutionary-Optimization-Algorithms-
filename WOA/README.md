@@ -10,6 +10,7 @@ Humpback whales hunt by creating a spiral movement around their prey, trapping i
 
 ---
 
+
 ## **2️⃣ How WOA Works**
 
 The WOA simulates the whale's hunting strategy through three primary operations:
@@ -74,6 +75,34 @@ To evaluate WOA, we apply it to **five well-known optimization functions**:
 | **Griewank** | ![Griewank Function](https://latex.codecogs.com/png.image?\color{white}&space;f(x)&space;=&space;1&space;&plus;&space;(1/4000)&space;\sum&space;x_i^2&space;-&space;\prod&space;\cos(x_i&space;/&space;\sqrt{i})) | \( (0,0) \), \( f(0) = 0 \) |
 
 These functions **test WOA's ability to find minima** across different landscapes.
+In this project, we use **five well-known benchmark functions** to test the Whale Optimization Algorithm (WOA):
+
+### **1. Sphere Function**
+- **Formula**: ![Sphere Function](https://latex.codecogs.com/png.image?\color{white}&space;f(x)&space;=&space;\sum&space;x_i^2)
+- **Description**: A simple, convex function with a single global minimum. It tests the algorithm's ability to converge to a single optimal point.
+- **Global Minimum**: \( f(0, 0) = 0 \)
+
+### **2. Rastrigin Function**
+- **Formula**: ![Rastrigin Function](https://latex.codecogs.com/png.image?\color{white}&space;f(x)&space;=&space;10n&space;&plus;&space;\sum&space;[x_i^2&space;-&space;10&space;\cos(2\pi&space;x_i)])
+- **Description**: A highly multimodal function with many local minima. It tests the algorithm's ability to avoid local optima and find the global minimum.
+- **Global Minimum**: \( f(0, 0) = 0 \)
+
+### **3. Rosenbrock Function**
+- **Formula**: ![Rosenbrock Function](https://latex.codecogs.com/png.image?\color{white}&space;f(x)&space;=&space;\sum&space;[100&space;(x_{i&plus;1}&space;-&space;x_i^2)^2&space;&plus;&space;(x_i&space;-&space;1)^2])
+- **Description**: A non-convex function with a narrow, parabolic valley. It tests the algorithm's ability to navigate through curved and flat regions.
+- **Global Minimum**: \( f(1, 1) = 0 \)
+
+### **4. Ackley Function**
+- **Formula**: ![Ackley Function](https://latex.codecogs.com/png.image?\color{white}&space;f(x)&space;=&space;-20&space;e^{-0.2&space;\sqrt{(1/n)&space;\sum&space;x_i^2}}&space;-&space;e^{(1/n)&space;\sum&space;\cos(2\pi&space;x_i)}&space;&plus;&space;20&space;&plus;&space;e)
+- **Description**: A multimodal function with many local minima and a nearly flat outer region. It tests the algorithm's ability to escape flat regions and converge to the global minimum.
+- **Global Minimum**: \( f(0, 0) = 0 \)
+
+### **5. Griewank Function**
+- **Formula**: ![Griewank Function](https://latex.codecogs.com/png.image?\color{white}&space;f(x)&space;=&space;1&space;&plus;&space;(1/4000)&space;\sum&space;x_i^2&space;-&space;\prod&space;\cos(x_i&space;/&space;\sqrt{i}))
+- **Description**: A function with many regularly distributed local minima. It tests the algorithm's ability to balance exploration and exploitation.
+- **Global Minimum**: \( f(0, 0) = 0 \)
+
+These functions are chosen to evaluate WOA's performance across different landscapes, including convex, non-convex, multimodal, and flat regions. By testing WOA on these functions, we can assess its ability to find global minima and avoid getting trapped in local optima.
 
 ---
 
