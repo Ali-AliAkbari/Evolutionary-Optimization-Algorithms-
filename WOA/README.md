@@ -1,5 +1,3 @@
-Here's your **README.md** file with a detailed explanation of the **Whale Optimization Algorithm (WOA)**, including its origin, working mechanism, benchmark functions, results, and GIF visualizations.  
-
 ---
 
 # **Whale Optimization Algorithm (WOA) - Benchmark Functions**
