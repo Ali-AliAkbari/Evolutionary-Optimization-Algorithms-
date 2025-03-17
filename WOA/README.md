@@ -4,9 +4,9 @@
 
 ## **1️⃣ Overview of WOA**
 
-The **Whale Optimization Algorithm (WOA)** is a **nature-inspired metaheuristic optimization algorithm** introduced by **Seyedali Mirjalili** in 2016. It is inspired by the **hunting behavior of humpback whales**, specifically their **bubble-net feeding strategy**. 
+The Whale Optimization Algorithm (WOA) is a nature-inspired metaheuristic optimization technique introduced by Seyedali Mirjalili in 2016. It is based on the unique hunting strategy of humpback whales, known as **bubble-net feeding**.  
 
-Humpback whales hunt by creating a spiral movement around their prey, trapping it within a shrinking circle before attacking. WOA mathematically models this behavior to solve **optimization problems** by iteratively refining solutions within a search space.
+In this strategy, humpback whales encircle their prey by creating spiral movements and gradually narrowing the loop before striking. WOA mathematically models this behavior to explore and exploit the search space, refining candidate solutions iteratively. By mimicking the whales' encircling, spiral motion, and adaptive shrinking mechanism, WOA effectively balances exploration and exploitation, making it a powerful tool for solving complex optimization problems.
 
 ---
 
