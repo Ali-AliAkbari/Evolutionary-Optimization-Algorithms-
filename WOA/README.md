@@ -104,6 +104,31 @@ In this project, we use **five well-known benchmark functions** to test the Whal
 
 These functions are chosen to evaluate WOA's performance across different landscapes, including convex, non-convex, multimodal, and flat regions. By testing WOA on these functions, we can assess its ability to find global minima and avoid getting trapped in local optima.
 
+<table align="center">
+  <tr>
+    <td align="center"><strong>Sphere</strong></td>
+    <td align="center"><strong>Rastrigin</strong></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./Images/sphere.png" width="250" height="200" alt="Sphere Optimization"></td>
+    <td align="center"><img src="./Images/Rastrigin Function.png" width="250" height="200" alt="Rastrigin Optimization"></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Rosenbrock</strong></td>
+    <td align="center"><strong>Ackley</strong></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./Images/Rosenbrock Function.png" width="250" height="200" alt="Rosenbrock Optimization"></td>
+    <td align="center"><img src="./Images/Ackley Function.png" width="250" height="200" alt="Ackley Optimization"></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><strong>Griewank</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><img src="./Images/Griewank Function.png" width="250" height="200" alt="Griewank Optimization"></td>
+  </tr>
+</table>
+
 ---
 
 ## **4️⃣ GIF Visualizations**
