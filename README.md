@@ -7,7 +7,7 @@ Welcome to my Evolutionary Optimization Algorithms repository! This project expl
 1. [A Brief History of Optimization](#a-brief-history-of-optimization)
 2. [Where Do Evolutionary Algorithms Fit In?](#where-do-evolutionary-algorithms-fit-in)
 3. [Table of Evolutionary Optimization Algorithms](#Table-of-Evolutionary-Optimization-Algorithms)
-4. [Contributing](#Get-in-Touch)
+4. [Get in Touch](#Get-in-Touch)
 5. [License](#license)
 
 ---
