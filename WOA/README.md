@@ -126,7 +126,7 @@ Below is a table showing the **best solution found** for each function:
 
 | **Function**  | **Best (x, y) Found** | **WOA Cost** | **Optimal Cost** |
 |--------------|----------------------|-------------|-----------------|
-| **Sphere** | (-0.01, 0.02) | 0.0005 | 0 |
+| **Sphere** |  [3.74132678e-18 5.03965651e-19] | Fitness: 1.425150744918506e-35 | [0,0] |
 | **Rastrigin** | (0.03, -0.02) | 0.1 | 0 |
 | **Rosenbrock** | (0.98, 0.99) | 0.04 | 0 |
 | **Ackley** | (0.01, -0.01) | 0.002 | 0 |
