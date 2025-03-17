@@ -111,19 +111,19 @@ These functions are chosen to evaluate WOA's performance across different landsc
 The optimization process for each function is animated in GIFs, showing the whales' movement towards the global optimum. The GIFs are displayed at **1/4 of their original size** (250x200 pixels) in a **single row**.
 
 <p align="center">
-  <strong>Sphere</strong><br>
+  <strong>Sphere</strong>
   <img src="./Images/sphere.gif" width="250" height="200" alt="Sphere Optimization">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <strong>Rastrigin</strong><br>
+  <strong>Rastrigin</strong>
   <img src="./Images/Rastrigin Function.gif" width="250" height="200" alt="Rastrigin Optimization">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <strong>Rosenbrock</strong><br>
+  <strong>Rosenbrock</strong
   <img src="./Images/Rosenbrock Function.gif" width="250" height="200" alt="Rosenbrock Optimization">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <strong>Ackley</strong><br>
+  <strong>Ackley</strong>
   <img src="./Images/Ackley Function.gif" width="250" height="200" alt="Ackley Optimization">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <strong>Griewank</strong><br>
+  <strong>Griewank</strong>
   <img src="./Images/Griewank Function.gif" width="250" height="200" alt="Griewank Optimization">
 </p>
 
