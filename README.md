@@ -70,7 +70,7 @@ Evolutionary algorithms (EAs) are a subset of **metaheuristic optimization metho
 ## Get in Touch  
 
 Feel free to reach out if you have any questions or are interested in collaboration! 🚀
-
+Ali AliAkbari - [ali.aliakbari@ut.ac.ir] - [ali0aliakbari0@gmail.com]
 ## License  
 
 This project is licensed under the **MIT License**, allowing free use, modification, and distribution.  
