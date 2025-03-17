@@ -108,28 +108,33 @@ These functions are chosen to evaluate WOA's performance across different landsc
 
 ## **4️⃣ GIF Visualizations**
 
-The optimization process for each function is animated in GIFs, showing the whales' movement towards the global optimum. The GIFs are displayed in a **3-row, 2-column layout**.
+The optimization process for each function is animated in GIFs, showing the whales' movement towards the global optimum. The GIFs are displayed at **1/3 of their original size** (333x267 pixels) and arranged in a **3-row, 2-column layout**.
 
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+  <!-- Row 1 -->
   <div>
     <p><strong>Sphere</strong></p>
-    <img src="./Images/sphere.gif" alt="Sphere Optimization">
+    <img src="./Images/sphere.gif" width="333" height="267" alt="Sphere Optimization">
   </div>
   <div>
     <p><strong>Rastrigin</strong></p>
-    <img src="./Images/Rastrigin Function.gif" alt="Rastrigin Optimization">
+    <img src="./Images/Rastrigin Function.gif" width="333" height="267" alt="Rastrigin Optimization">
   </div>
+
+  <!-- Row 2 -->
   <div>
     <p><strong>Rosenbrock</strong></p>
-    <img src="./Images/Rosenbrock Function.gif" alt="Rosenbrock Optimization">
+    <img src="./Images/Rosenbrock Function.gif" width="333" height="267" alt="Rosenbrock Optimization">
   </div>
   <div>
     <p><strong>Ackley</strong></p>
-    <img src="./Images/Ackley Function.gif" alt="Ackley Optimization">
+    <img src="./Images/Ackley Function.gif" width="333" height="267" alt="Ackley Optimization">
   </div>
+
+  <!-- Row 3 -->
   <div>
     <p><strong>Griewank</strong></p>
-    <img src="./Images/Griewank Function.gif" alt="Griewank Optimization">
+    <img src="./Images/Griewank Function.gif" width="333" height="267" alt="Griewank Optimization">
   </div>
 </div>
 
