@@ -112,11 +112,11 @@ The optimization process for each function is animated in GIFs, showing the whal
 
 | **Function** | **GIF Visualization** |
 |-------------|----------------------|
-| **Sphere** | <img src="./Images/sphere.gif" width="40" height="40" alt="Sphere Optimization"> |
-| **Rastrigin** | <img src="./Images/Rastrigin Function.gif" width="40" height="40" alt="Rastrigin Optimization"> |
-| **Rosenbrock** | <img src="./Images/Rosenbrock Function.gif" width="40" height="40" alt="Rosenbrock Optimization"> |
-| **Ackley** | <img src="./Images/Ackley Function.gif" width="40" height="40" alt="Ackley Optimization"> |
-| **Griewank** | <img src="./Images/Griewank Function.gif" width="40" height="40" alt="Griewank Optimization"> |
+| **Sphere** | <img src="./Images/sphere.gif" width="80" height="80" alt="Sphere Optimization"> |
+| **Rastrigin** | <img src="./Images/Rastrigin Function.gif" width="80" height="80" alt="Rastrigin Optimization"> |
+| **Rosenbrock** | <img src="./Images/Rosenbrock Function.gif" width="80" height="80" alt="Rosenbrock Optimization"> |
+| **Ackley** | <img src="./Images/Ackley Function.gif" width="80" height="80" alt="Ackley Optimization"> |
+| **Griewank** | <img src="./Images/Griewank Function.gif" width="80" height="80" alt="Griewank Optimization"> |
 
 ---
 
