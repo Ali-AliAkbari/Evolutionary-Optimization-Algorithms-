@@ -115,22 +115,22 @@ The optimization process for each function is animated in GIFs, showing the whal
 | **Sphere** | ![Sphere Optimization](./gifs/sphere.gif) |
 | **Rastrigin** | ![Rastrigin Optimization](./gifs/rastrigin.gif) |
 | **Rosenbrock** | ![Rosenbrock Optimization](./gifs/rosenbrock.gif) |
-| **Ackley** | ![Ackley Optimization](./gifs/ackley.gif) |
+| **Ackley** | ![Ackley Optimization](./Images/Ackley%20Function.gif) |
 | **Griewank** | ![Griewank Optimization](./gifs/griewank.gif) |
 
 ---
 
 ## **5️⃣ Optimization Results**
 
-Below is a table showing the **best solution found** for each function:
+Below is a table showing the **best solution found** for each function for n=10,iter=150 :
 
 | **Function**  | **Best (x, y) Found** | **WOA Cost** | **Optimal Cost** |
 |--------------|----------------------|-------------|-----------------|
-| **Sphere** |  [3.74132678e-18 5.03965651e-19] | Fitness: 1.425150744918506e-35 | [0,0] |
-| **Rastrigin** | (0.03, -0.02) | 0.1 | 0 |
-| **Rosenbrock** | (0.98, 0.99) | 0.04 | 0 |
-| **Ackley** | (0.01, -0.01) | 0.002 | 0 |
-| **Griewank** | (-0.02, 0.01) | 0.0003 | 0 |
+| **Sphere** |  [3.74132678e-18 , 5.03965651e-19] | 1.425150744918506e-35 | [0,0] |
+| **Rastrigin** | [-1.49336736e-10  4.13576451e-10] | 0.0 | [0,0] |
+| **Rosenbrock** | [0.72233299 , 0.51784078] | 0.0786388788804827 | [1,1] |
+| **Ackley** | [-7.16185498e-17 , -1.48101134e-16] |  4.440892098500626e-16  | [0,0] |
+| **Griewank** | [-2.21376396e-09 , 8.60352070e-09] | 0.0 | [0,0] |
 
 WOA successfully converges to near-optimal solutions for all benchmark functions.
 
