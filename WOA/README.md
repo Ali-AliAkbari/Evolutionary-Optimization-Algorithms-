@@ -108,7 +108,7 @@ These functions are chosen to evaluate WOA's performance across different landsc
 
 ## **4️⃣ GIF Visualizations**
 
-The optimization process for each function is animated in GIFs, showing the whales' movement towards the global optimum. The GIFs are displayed at **1/4 of their original size** (250x200 pixels) in a **grid layout**.
+We used the Whale Optimization Algorithm (WOA) to optimize functions with a population of 10 whales over 150 iterations. The results were satisfactory for all functions except Rosenbrock. However, by increasing the whale population by 30, we achieved better optimization for Rosenbrock as well. The improved result is available in the Images folder under the name Rosenbrock Function2.gif.
 
 <table align="center">
   <tr>
