@@ -108,15 +108,15 @@ These functions are chosen to evaluate WOA's performance across different landsc
 
 ## **4️⃣ GIF Visualizations**
 
-The optimization process for each function is animated in GIFs, showing the whales' movement towards the global optimum.
+The optimization process for each function is animated in GIFs, showing the whales' movement towards the global optimum. All GIFs are displayed at **40x40 pixels** for consistency.
 
 | **Function** | **GIF Visualization** |
 |-------------|----------------------|
-| **Sphere** | ![Sphere Optimization](./Images/sphere.gif) |
-| **Rastrigin** | ![Rastrigin Optimization](./Images/Rastrigin%20Function.gif) |
-| **Rosenbrock** | ![Rosenbrock Optimization](./Images/Rosenbrock%20Function.gif) |
-| **Ackley** | ![Ackley Optimization](./Images/Ackley%20Function.gif) |
-| **Griewank** | ![Griewank Optimization](./Images/Griewank%20Function.gif) |
+| **Sphere** | <img src="./Images/sphere.gif" width="40" height="40" alt="Sphere Optimization"> |
+| **Rastrigin** | <img src="./Images/Rastrigin Function.gif" width="40" height="40" alt="Rastrigin Optimization"> |
+| **Rosenbrock** | <img src="./Images/Rosenbrock Function.gif" width="40" height="40" alt="Rosenbrock Optimization"> |
+| **Ackley** | <img src="./Images/Ackley Function.gif" width="40" height="40" alt="Ackley Optimization"> |
+| **Griewank** | <img src="./Images/Griewank Function.gif" width="40" height="40" alt="Griewank Optimization"> |
 
 ---
 
