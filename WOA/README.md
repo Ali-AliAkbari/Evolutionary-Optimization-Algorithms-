@@ -115,13 +115,13 @@ The optimization process for each function is animated in GIFs, showing the whal
   <img src="./Images/sphere.gif" width="250" height="200" alt="Sphere Optimization">
   &nbsp;&nbsp;&nbsp;&nbsp;
   <strong>Rastrigin</strong>
-  <img src="./Images/Rastrigin Function.gif" width="250" height="200" alt="Rastrigin Optimization">
+  <img src="./Images/Rastrigin Function.gif" width="250" height="200" alt="Rastrigin Optimization"><br>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <strong>Rosenbrock</strong
   <img src="./Images/Rosenbrock Function.gif" width="250" height="200" alt="Rosenbrock Optimization">
   &nbsp;&nbsp;&nbsp;&nbsp;
   <strong>Ackley</strong>
-  <img src="./Images/Ackley Function.gif" width="250" height="200" alt="Ackley Optimization">
+  <img src="./Images/Ackley Function.gif" width="250" height="200" alt="Ackley Optimization"><be>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <strong>Griewank</strong>
   <img src="./Images/Griewank Function.gif" width="250" height="200" alt="Griewank Optimization">
