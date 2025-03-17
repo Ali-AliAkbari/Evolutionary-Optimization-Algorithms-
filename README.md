@@ -6,10 +6,9 @@ Welcome to my Evolutionary Optimization Algorithms repository! This project expl
 
 1. [A Brief History of Optimization](#a-brief-history-of-optimization)
 2. [Where Do Evolutionary Algorithms Fit In?](#where-do-evolutionary-algorithms-fit-in)
-3. [Future Algorithms](#future-algorithms)
-4. [How to Use This Repository](#how-to-use-this-repository)
-5. [Contributing](#contributing)
-6. [License](#license)
+3. [Table of Evolutionary Optimization Algorithms](#Table-of-Evolutionary-Optimization-Algorithms)
+4. [Contributing](#Get-in-Touch)
+5. [License](#license)
 
 ---
 
@@ -67,4 +66,11 @@ Evolutionary algorithms (EAs) are a subset of **metaheuristic optimization metho
 3. [Grey Wolf Optimizer](GWO/)
 4. [Whale Optimization Algorithm](WOA/)
 
+   
+## Get in Touch  
 
+Feel free to reach out if you have any questions or are interested in collaboration! 🚀
+
+## License  
+
+This project is licensed under the **MIT License**, allowing free use, modification, and distribution.  
