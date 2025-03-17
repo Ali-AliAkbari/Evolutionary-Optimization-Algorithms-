@@ -108,16 +108,30 @@ These functions are chosen to evaluate WOA's performance across different landsc
 
 ## **4️⃣ GIF Visualizations**
 
-The optimization process for each function is animated in GIFs, showing the whales' movement towards the global optimum. All GIFs are displayed at **40x40 pixels** for consistency.
+The optimization process for each function is animated in GIFs, showing the whales' movement towards the global optimum. The GIFs are displayed at **1/3 of their original size** (333x267 pixels) and arranged in a **3-row, 2-column layout**.
 
-| **Function** | **GIF Visualization** |
-|-------------|----------------------|
-| **Sphere** | <img src="./Images/sphere.gif" width="80" height="80" alt="Sphere Optimization"> |
-| **Rastrigin** | <img src="./Images/Rastrigin Function.gif" width="80" height="80" alt="Rastrigin Optimization"> |
-| **Rosenbrock** | <img src="./Images/Rosenbrock Function.gif" width="80" height="80" alt="Rosenbrock Optimization"> |
-| **Ackley** | <img src="./Images/Ackley Function.gif" width="80" height="80" alt="Ackley Optimization"> |
-| **Griewank** | <img src="./Images/Griewank Function.gif" width="80" height="80" alt="Griewank Optimization"> |
-
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+  <div>
+    <p><strong>Sphere</strong></p>
+    <img src="./Images/sphere.gif" width="333" height="267" alt="Sphere Optimization">
+  </div>
+  <div>
+    <p><strong>Rastrigin</strong></p>
+    <img src="./Images/Rastrigin Function.gif" width="333" height="267" alt="Rastrigin Optimization">
+  </div>
+  <div>
+    <p><strong>Rosenbrock</strong></p>
+    <img src="./Images/Rosenbrock Function.gif" width="333" height="267" alt="Rosenbrock Optimization">
+  </div>
+  <div>
+    <p><strong>Ackley</strong></p>
+    <img src="./Images/Ackley Function.gif" width="333" height="267" alt="Ackley Optimization">
+  </div>
+  <div>
+    <p><strong>Griewank</strong></p>
+    <img src="./Images/Griewank Function.gif" width="333" height="267" alt="Griewank Optimization">
+  </div>
+</div>
 ---
 
 ## **5️⃣ Optimization Results**
