@@ -108,28 +108,33 @@ These functions are chosen to evaluate WOA's performance across different landsc
 
 ## **4️⃣ GIF Visualizations**
 
-The optimization process for each function is animated in GIFs, showing the whales' movement towards the global optimum. The GIFs are displayed at **1/4 of their original size** (250x200 pixels) in a **grid of three rows and two columns**.
+The optimization process for each function is animated in GIFs, showing the whales' movement towards the global optimum. The GIFs are displayed at **1/4 of their original size** (250x200 pixels) in a **grid layout**.
 
-<p align="center">
-  <strong>Sphere</strong><br>
-  <img src="./Images/sphere.gif" width="250" height="200" alt="Sphere Optimization">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <strong>Rastrigin</strong><br>
-  <img src="./Images/Rastrigin Function.gif" width="250" height="200" alt="Rastrigin Optimization">
-</p>
+<table align="center">
+  <tr>
+    <td align="center"><strong>Sphere</strong></td>
+    <td align="center"><strong>Rastrigin</strong></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./Images/sphere.gif" width="250" height="200" alt="Sphere Optimization"></td>
+    <td align="center"><img src="./Images/Rastrigin Function.gif" width="250" height="200" alt="Rastrigin Optimization"></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Rosenbrock</strong></td>
+    <td align="center"><strong>Ackley</strong></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./Images/Rosenbrock Function.gif" width="250" height="200" alt="Rosenbrock Optimization"></td>
+    <td align="center"><img src="./Images/Ackley Function.gif" width="250" height="200" alt="Ackley Optimization"></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><strong>Griewank</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><img src="./Images/Griewank Function.gif" width="250" height="200" alt="Griewank Optimization"></td>
+  </tr>
+</table>
 
-<p align="center">
-  <strong>Rosenbrock</strong><br>
-  <img src="./Images/Rosenbrock Function.gif" width="250" height="200" alt="Rosenbrock Optimization">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <strong>Ackley</strong><br>
-  <img src="./Images/Ackley Function.gif" width="250" height="200" alt="Ackley Optimization">
-</p>
-
-<p align="center">
-  <strong>Griewank</strong><br>
-  <img src="./Images/Griewank Function.gif" width="250" height="200" alt="Griewank Optimization">
-</p>
 
 
 ## **5️⃣ Optimization Results**
