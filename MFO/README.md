@@ -44,7 +44,6 @@ The main function `MFO` simulates the moth-flame behavior, updating moths' posit
 
 ```python
 def MFO(nw, dim, iter, xMin, xMax):
-    # MFO algorithm code here
 ```
 
 ### **GIF Creation**
@@ -52,7 +51,6 @@ The `create_gif` function generates a GIF to visualize the optimization process:
 
 ```python
 def create_gif(moth_path, flame_path, xMin, xMax, filename="MFO_movement.gif"):
-    # GIF creation code here
 ```
 
 ## Example Usage
