@@ -64,7 +64,7 @@ GIFs illustrating the optimization process for each function are generated. Thes
     <td align="center"><strong>Rastrigin</strong></td>
   </tr>
   <tr>
-    <td align="center"><img src="./Images/sphere.gif" width="250" height="200" alt="Sphere Optimization"></td>
+    <td align="center"><img src="./Images/Sphere Function.gif" width="250" height="200" alt="Sphere Optimization"></td>
     <td align="center"><img src="./Images/Rastrigin Function.gif" width="250" height="200" alt="Rastrigin Optimization"></td>
   </tr>
   <tr>
