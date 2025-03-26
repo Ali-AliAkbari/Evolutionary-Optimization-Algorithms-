@@ -43,7 +43,7 @@ The objective functions used in this project are:
 4. **Rosenbrock Function**
 5. **Ackley Function**
 
-For more details about these benchmark functions, visit the [WOA page](https://github.com/yourgithubpage).
+For more details about these benchmark functions, visit the [WOA page](https://github.com/Ali-AliAkbari/Evolutionary-Optimization-Algorithms-/tree/main/WOA).
 
 ## Results Table
 
@@ -58,5 +58,35 @@ For more details about these benchmark functions, visit the [WOA page](https://g
 ## GIF Visualizations
 GIFs illustrating the optimization process for each function are generated. These visualizations show how moths move towards the best solutions over iterations.
 
-## License
-This project is open-source and available for research and educational purposes.
+<table align="center">
+  <tr>
+    <td align="center"><strong>Sphere</strong></td>
+    <td align="center"><strong>Rastrigin</strong></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./Images/sphere.gif" width="250" height="200" alt="Sphere Optimization"></td>
+    <td align="center"><img src="./Images/Rastrigin Function.gif" width="250" height="200" alt="Rastrigin Optimization"></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Rosenbrock</strong></td>
+    <td align="center"><strong>Ackley</strong></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./Images/Rosenbrock Function.gif" width="250" height="200" alt="Rosenbrock Optimization"></td>
+    <td align="center"><img src="./Images/Ackley Function.gif" width="250" height="200" alt="Ackley Optimization"></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><strong>Griewank</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><img src="./Images/Griewank Function.gif" width="250" height="200" alt="Griewank Optimization"></td>
+  </tr>
+</table>
+
+## 📜 License  
+
+This project is licensed under the **MIT License**, allowing free use, modification, and distribution.  
+
+## 🤝 Get in Touch  
+
+Feel free to reach out if you have any questions or are interested in collaboration! 🚀
