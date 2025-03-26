@@ -83,6 +83,12 @@ GIFs illustrating the optimization process for each function are generated. Thes
   </tr>
 </table>
 
+## References
+
+For the original MFO algorithm paper and theoretical foundation, please refer to the following work:
+
+**Mirjalili, S. (2015). Moth-flame optimization algorithm: A novel nature-inspired heuristic paradigm. Knowledge-Based Systems, 89, 228-249.**
+
 ## 📜 License  
 
 This project is licensed under the **MIT License**, allowing free use, modification, and distribution.  
