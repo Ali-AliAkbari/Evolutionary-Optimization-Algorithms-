@@ -61,36 +61,10 @@ Evolutionary algorithms (EAs) are a subset of **metaheuristic optimization metho
 
 | **Category**               | **Algorithms**                   |
 |---------------------------|--------------------------------|
-| **Evolutionary Algorithms**  | GA, ES, GP, DE                |
-| **Physics-based Algorithms** | GSA, CFO, CSS, BBBC           |
-| **Swarm-based Algorithms**   | PSO, ACO, ABS, CS            |
-| **Human-based Algorithms**   | TLBO, HS, TS, GSO            |
-
-# Meta-heuristic Algorithms
-
-## Evolutionary Algorithms
-- GA (Genetic Algorithm)
-- ES (Evolution Strategies)
-- GP (Genetic Programming)
-- DE (Differential Evolution)
-
-## Physics-based Algorithms
-- GSA (Gravitational Search Algorithm)
-- CFO (Central Force Optimization)
-- CSS (Charged System Search)
-- BBBC (Big Bang-Big Crunch)
-
-## Swarm-based Algorithms
-- PSO (Particle Swarm Optimization)
-- ACO (Ant Colony Optimization)
-- ABS (Artificial Bee Swarm)
-- CS (Cuckoo Search)
-
-## Human-based Algorithms
-- TLBO (Teaching-Learning-Based Optimization)
-- HS (Harmony Search)
-- TS (Tabu Search)
-- GSO (Group Search Optimizer)
+| **Evolutionary Algorithms**  | Genetic Algorithm, Evolution Strategies, Genetic Programming, Differential Evolution                |
+| **Physics-based Algorithms** | Gravitational Search Algorithm, Central Force Optimization, Charged System Search, Big Bang-Big Crunch           |
+| **Swarm-based Algorithms**   | Particle Swarm Optimization, Ant Colony Optimization, Artificial Bee Swarm, Cuckoo Search            |
+| **Human-based Algorithms**   | Teaching-Learning-Based Optimization, Harmony Search, Tabu Search, Group Search Optimizer            |
 
 
 ## Table of Evolutionary Optimization Algorithms
