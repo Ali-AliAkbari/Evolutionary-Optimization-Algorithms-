@@ -57,7 +57,41 @@ Evolutionary algorithms (EAs) are a subset of **metaheuristic optimization metho
 - **Differential Evolution (DE)**: Uses vector differences to evolve solutions.
 - **Ant Colony Optimization (ACO)**: Mimics the foraging behavior of ants.
 
----
+# Meta-heuristic Algorithms
+
+| **Category**               | **Algorithms**                   |
+|---------------------------|--------------------------------|
+| **Evolutionary Algorithms**  | GA, ES, GP, DE                |
+| **Physics-based Algorithms** | GSA, CFO, CSS, BBBC           |
+| **Swarm-based Algorithms**   | PSO, ACO, ABS, CS            |
+| **Human-based Algorithms**   | TLBO, HS, TS, GSO            |
+
+# Meta-heuristic Algorithms
+
+## Evolutionary Algorithms
+- GA (Genetic Algorithm)
+- ES (Evolution Strategies)
+- GP (Genetic Programming)
+- DE (Differential Evolution)
+
+## Physics-based Algorithms
+- GSA (Gravitational Search Algorithm)
+- CFO (Central Force Optimization)
+- CSS (Charged System Search)
+- BBBC (Big Bang-Big Crunch)
+
+## Swarm-based Algorithms
+- PSO (Particle Swarm Optimization)
+- ACO (Ant Colony Optimization)
+- ABS (Artificial Bee Swarm)
+- CS (Cuckoo Search)
+
+## Human-based Algorithms
+- TLBO (Teaching-Learning-Based Optimization)
+- HS (Harmony Search)
+- TS (Tabu Search)
+- GSO (Group Search Optimizer)
+
 
 ## Table of Evolutionary Optimization Algorithms
 
