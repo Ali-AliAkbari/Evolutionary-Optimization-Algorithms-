@@ -1,87 +1,59 @@
-# Moth-Flame Optimization (MFO) Algorithm Visualization
+# Moth-Flame Optimization (MFO)
 
-This repository contains an implementation of the Moth-Flame Optimization (MFO) algorithm with a visualization of the moth and flame movement over iterations. The solution is shown through a contour plot, where moths and flames are distinctly marked with different colors, and a GIF animation is created to visualize their movement through the optimization space.
+This project implements the **Moth-Flame Optimization (MFO) algorithm**, a nature-inspired metaheuristic optimization technique designed to solve complex optimization problems. The algorithm mimics the navigation behavior of moths, which use a logarithmic spiral flying pattern toward light sources. In the MFO algorithm, a set of moths explores the search space, while flames (elite solutions) guide them toward better solutions. Over iterations, moths converge to optimal or near-optimal solutions.
 
-## Description
+This implementation is based on the original MFO paper, ensuring an accurate representation of the algorithm’s principles and behavior. The algorithm is tested on five well-known benchmark functions: **Griewank, Rastrigin, Sphere, Rosenbrock, and Ackley functions**. The optimization process is visualized using GIFs that show the movement of moths towards flames during the optimization.
 
-Moth-Flame Optimization (MFO) is an optimization algorithm inspired by the flight behavior of moths. This repository implements the MFO algorithm for a simple 2D optimization problem (minimizing the sum of squares). The algorithm generates moths and flames, with moths representing potential solutions, and flames representing the best solutions.
+## Algorithm Explanation
+The Moth-Flame Optimization (MFO) algorithm is inspired by the natural behavior of moths navigating using a transverse orientation mechanism. The mathematical model behind the algorithm consists of three main components:
 
-The algorithm's behavior is visualized by:
-- Plotting the movement of moths and flames at each iteration.
-- Saving the iteration steps into an animated GIF.
+1. **Moth Movement**: Each moth follows a logarithmic spiral path towards a flame (elite solution) in the search space. The movement is defined as:
+   \[
+   S(M_i, F_j) = D_i \cdot e^{b \cdot t} \cdot \cos(2 \pi t) + F_j
+   \]
+   where:
+   - \( S(M_i, F_j) \) is the new position of moth \( M_i \) moving towards flame \( F_j \),
+   - \( D_i \) is the distance between the moth and the flame, calculated as \( |F_j - M_i| \),
+   - \( b \) is a constant defining the shape of the logarithmic spiral,
+   - \( t \) is a random number in \([-1, 1]\),
+   - \( F_j \) is the position of the flame.
 
-## Features
-- **MFO Algorithm**: Solves an optimization problem using moths and flames.
-- **Visualization**: Moths and flames are displayed on a contour plot.
-- **GIF Creation**: A GIF is generated to showcase the optimization progress.
+2. **Flame Update Mechanism**: Flames represent the best solutions found so far. In each iteration, the number of flames decreases to emphasize exploitation in later stages of optimization:
+   \[
+   N_f = round(N - \frac{t \cdot (N - 1)}{T})
+   \]
+   where:
+   - \( N_f \) is the number of flames,
+   - \( N \) is the total number of moths,
+   - \( t \) is the current iteration number,
+   - \( T \) is the maximum number of iterations.
 
-## Requirements
+3. **Exploration and Exploitation**: The search is balanced between exploration (searching new areas) and exploitation (refining known good areas) by dynamically adjusting the number of flames and moth movement patterns.
 
-To run this code, you need the following libraries:
+## Benchmark Functions
+The objective functions used in this project are:
 
-- `numpy` for numerical operations.
-- `matplotlib` for plotting and visualization.
-- `PIL` (Pillow) for creating GIFs.
+1. **Griewank Function**
+2. **Rastrigin Function**
+3. **Sphere Function**
+4. **Rosenbrock Function**
+5. **Ackley Function**
 
-You can install the required libraries with pip:
+For more details about these benchmark functions, visit the [WOA page](https://github.com/yourgithubpage).
 
-```bash
-pip install numpy matplotlib pillow
-```
+## Results Table
 
-## Code Overview
+| Function Name      | Best Solution                         | Cost |
+|--------------------|--------------------------------------|--------------------------------|
+| Griewank Function | [-0.00012325  0.00037966]           | 4.367143913164284e-08       |
+| Rastrigin Function | [ 8.49387704e-07 -8.99559405e-07]  | 3.036717544091516e-10       |
+| Sphere Function   | [ 3.29224425e-06 -7.34607905e-06]  | 6.480374959209336e-11       |
+| Rosenbrock Function | [1. 1.]                          | 3.2405872918652843e-22      |
+| Ackley Function   | [-5.34234115e-11 1.07229060e-10]  | 3.3884761663216523e-10      |
 
-### **Objective Function**
-The objective function is a simple sum of squares (L2 norm squared):
-
-```python
-def objective_function(X):
-    return np.sum(X**2, axis=1)
-```
-
-### **MFO Algorithm**
-The main function `MFO` simulates the moth-flame behavior, updating moths' positions over time to optimize the objective function.
-
-```python
-def MFO(nw, dim, iter, xMin, xMax):
-```
-
-### **GIF Creation**
-The `create_gif` function generates a GIF to visualize the optimization process:
-
-```python
-def create_gif(moth_path, flame_path, xMin, xMax, filename="MFO_movement.gif"):
-```
-
-## Example Usage
-
-To run the MFO algorithm and generate the GIF, use the following code:
-
-```python
-# Set parameters for MFO
-nw, dim, iter, xMin, xMax = 30, 2, 100, -5, 5
-
-# Run MFO optimization
-best_solution, moth_path, flame_path = MFO(nw, dim, iter, xMin, xMax)
-
-# Generate and save GIF
-create_gif(moth_path, flame_path, xMin, xMax)
-```
-
-The generated GIF will be saved as `MFO_movement.gif` by default.
-
-## Results
-
-The optimization process is shown in a GIF where:
-- **Moths** are displayed in **white**.
-- **Flames** are displayed in **orange**.
-- The **Global Minimum** is marked with a **red 'X'**.
-
-## Contributing
-
-Feel free to fork this repository, open issues, or submit pull requests. Contributions are always welcome!
+## GIF Visualizations
+GIFs illustrating the optimization process for each function are generated. These visualizations show how moths move towards the best solutions over iterations.
 
 ## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is open-source and available for research and educational purposes.
 
